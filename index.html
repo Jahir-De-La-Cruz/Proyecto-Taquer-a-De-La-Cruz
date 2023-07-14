@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquería De La Cruz</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/estilos.css?v123456">
+    <link rel="shortcut icon" href="img/logo-taqueria.png" type="image/x-icon">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo-taqueria.png" alt="logo" class="logo-img">
+                <h2 class="logo-title">Taquería De La Cruz</h2>
+            </div>
+            <nav>
+                <ul class="links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="paginas/ver-menu.html">Ver Menu</a></li>
+                    <li><a href="paginas/bebidas.html">Bebidas</a></li>
+                    <li><a href="paginas/solicitud.php">Solicitud de Empleo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="Info-negocio">
+        <div class="Info-textos">
+            <h2 class="info-titulo">La Mejor Taquería de todo México</h2>
+            <h3 class="info-subtitulo">Desde el 2020</h3>
+            <p>Contamos con una gran variedad en Productos, desde Tacos al Pastor, Carne Asada, hasta
+            hamburguesas, Papas Asadas (Mixta o Sencilla), Campechanas, etc.</p>
+            <p>Da <a href="paginas/ver-menu.html">clic aqui</a> para ver nuestro menu completo</p>
+        </div>
+    </section>
+
+    <section class="Productos">
+        <div class="Productos-titulo">
+            <h2>Productos Principales</h2>
+        </div>
+        <div class="Productos-card" id="contenedor-productos">
+            <div class="Productos-card__cards">
+                <img src="img/tacos/Tacos-deshebrada.jpg" alt="Producto 1">
+                <h2 class="Productos-card__nombre">Tacos de Deshebrada </h2>
+                <h4 class="Productos-card__descripcion">Orden de 5 tacos con cilantro y cebolla</h4>
+                <p class="Productos-card__precio">Precio $35</p>
+                <button class="btnComprar" data-nombre="Tacos de Deshebrada" data-precio="35">Comprar</button>
+            </div>
+            <div class="Productos-card__cards">
+                <img src="img/hamburguesas/hamburguesa-sencilla.jpg" alt="Producto 2">
+                <h2 class="Productos-card__nombre">Hamburguesa Sencilla</h2>
+                <h4 class="Productos-card__descripcion">Hamburguesa con salsa especial</h4>
+                <p class="Productos-card__precio">Precio $40</p>
+                <button class="btnComprar" data-nombre="Hamburguesa Sencilla" data-precio="40">Comprar</button>
+            </div>
+            <div class="Productos-card__cards">
+                <img src="img/campechana/campechana-simple.jpg" alt="Producto 3">
+                <h2 class="Productos-card__nombre">Campechana</h2>
+                <h4 class="Productos-card__descripcion">Campechana con carne de bisteck</h4>
+                <p class="Productos-card__precio">Precio $40</p>
+                <button class="btnComprar" data-nombre="Campechana de Bisteck" data-precio="40">Comprar</button>
+            </div>
+            <div class="Productos-card__cards">
+                <img src="img/papa_asada/papa-asada-con-trompo.jpg" alt="Producto 4">
+                <h2 class="Productos-card__nombre">Papa Asada</h2>
+                <h4 class="Productos-card__descripcion">Papa Asada con trompo</h4>
+                <p class="Productos-card__precio">Precio $60</p>
+                <button class="btnComprar" data-nombre="Papa Asada Con Trompo" data-precio="60">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="footer-titulo">
+                <h2>Taquería De La Cruz</h2>
+            </div>
+            <div class="footer-contacto">
+                <h2>Contacto</h2>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: taqueriadlc@gmail.com</p>
+                <p>Dirección: 123 Calle Principal, México</p>
+              </div>
+            <div class="enlaces-frecuentes">
+                <h2>Enlaces Frecuentes</h2>
+                <ul>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <h2>Redes Sociales</h2>
+                <a class="fab fa-facebook-f footer__icon" href="#"></a>
+                <a class="fab fa-instagram footer__icon" href="#"></a>
+                <a class="fab fa-twitter footer__icon" href="#"></a>
+            </div>
+        </div>
+        <span></span>
+        <h3 class="end-title">&copy;TaqueríaDLC | Todos los derechos reservados</h3>
+    </footer>
+
+    <script src="js/function-button.js"></script>
+
+</body>
+</html>

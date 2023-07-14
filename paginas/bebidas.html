@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/bebidas.css?v12345678910">
+    <link rel="shortcut icon" href="../img/logo-taqueria.png" type="image/x-icon">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo-taqueria.png" alt="logo" class="logo-img">
+                <h2 class="logo-title">Taquería De La Cruz</h2>
+            </div>
+            <nav>
+                <ul class="links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="ver-menu.html">Ver Menu</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="solicitud.php">Solicitud de Empleo</a></li>
+                </ul>
+            </nav>
+            <div class="boton-de-busqueda">
+                <input type="text" id="search-input">
+                <button onclick="" id="search-button" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="Productos">
+        <div class="Productos-titulo">
+            <h2>Bebidas Disponibles</h2>
+        </div>
+        <div class="Productos-card" id="contenedor-productos">
+            <!-- primer fila -->
+            <div class="Productos-card__cards" data-categoria="refrescos">
+                <img src="../img/bebidas/Coca-Cola.jpg" alt="Producto 1">
+                <h2 class="Productos-card__nombre">Coca Cola</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $30</p>
+                <button class="btnComprar" data-nombre="Coca Cola" data-precio="30">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="refrescos">
+                <img src="../img/bebidas/Fanta-lata.jpg" alt="Producto 2">
+                <h2 class="Productos-card__nombre">Fanta En Lata</h2>
+                <h4 class="Productos-card__descripcion">400ml</h4>
+                <p class="Productos-card__precio">Precio $25</p>
+                <button class="btnComprar" data-nombre="Fanta en Lata" data-precio="25">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="refrescos">
+                <img src="../img/bebidas/Joya-sabores.jpg" alt="Producto 3">
+                <h2 class="Productos-card__nombre">Joya (cualquier sabor)</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $25</p>
+                <button class="btnComprar" data-nombre="Joya (cualquier sabor)" data-precio="25">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="refrescos">
+                <img src="../img/bebidas/Pepsi-Lata.jpg" alt="Producto 4">
+                <h2 class="Productos-card__nombre">Pepsi En Lata</h2>
+                <h4 class="Productos-card__descripcion">400ml</h4>
+                <p class="Productos-card__precio">Precio $25</p>
+                <button class="btnComprar" data-nombre="Pepsi en Lata" data-precio="25">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="refrescos">
+                <img src="../img/bebidas/DrPepper.jpg" alt="Producto 5">
+                <h2 class="Productos-card__nombre">Dr. Pepper</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $35</p>
+                <button class="btnComprar" data-nombre="Dr. Pepper" data-precio="35">Comprar</button>
+            </div>
+            <!-- segunda fila -->
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/Limonada.jpg" alt="Producto 6">
+                <h2 class="Productos-card__nombre">Limonada</h2>
+                <h4 class="Productos-card__descripcion">1L</h4>
+                <p class="Productos-card__precio">Precio $35</p>
+                <button class="btnComprar" data-nombre="Limonada" data-precio="35">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/fresa-coco.jpg" alt="Producto 7">
+                <h2 class="Productos-card__nombre">Agua de Fresa y Coco</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $30</p>
+                <button class="btnComprar" data-nombre="Agua de Fresa" data-precio="30">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/agua-jamaica.jpg" alt="Producto 8">
+                <h2 class="Productos-card__nombre">Agua de Jamaica</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $30</p>
+                <button class="btnComprar" data-nombre="Agua de Jamaica" data-precio="30">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/agua-horchata.jpg" alt="Producto 9">
+                <h2 class="Productos-card__nombre">Agua de Horchata</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $35</p>
+                <button class="btnComprar" data-nombre="Agua de Horchata" data-precio="35">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/agua-uva.jpg" alt="Producto 10">
+                <h2 class="Productos-card__nombre">Agua de Uva</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $30</p>
+                <button class="btnComprar" data-nombre="Agua de Uva" data-precio="30">Comprar</button>
+            </div>
+            <!-- tercer fila -->
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/agua-de-pepino-con-limon.jpg" alt="Producto 11">
+                <h2 class="Productos-card__nombre">Agua de Pepino y Limón</h2>
+                <h4 class="Productos-card__descripcion">700ml</h4>
+                <p class="Productos-card__precio">Precio $35</p>
+                <button class="btnComprar" data-nombre="Agua de Pepino con Limón" data-precio="35">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/agua-de-piña.jpg" alt="Producto 12">
+                <h2 class="Productos-card__nombre">Agua de Piña</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $30</p>
+                <button class="btnComprar" data-nombre="Agua de Piña" data-precio="30">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/agua-de-naranja.jpg" alt="Producto 13">
+                <h2 class="Productos-card__nombre">Agua de Naranja</h2>
+                <h4 class="Productos-card__descripcion">700ml</h4>
+                <p class="Productos-card__precio">Precio $35</p>
+                <button class="btnComprar" data-nombre="Agua de Naranja" data-precio="35">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="aguas sabor">
+                <img src="../img/bebidas/agua-sandia.jpg" alt="Producto 14">
+                <h2 class="Productos-card__nombre">Agua de Sandia</h2>
+                <h4 class="Productos-card__descripcion">600ml</h4>
+                <p class="Productos-card__precio">Precio $30</p>
+                <button class="btnComprar" data-nombre="Agua de Sandia" data-precio="30">Comprar</button>
+            </div>
+            <div class="Productos-card__cards" data-categoria="agua">
+                <img src="../img/bebidas/agua-simple.jpg" alt="Producto 15">
+                <h2 class="Productos-card__nombre">Agua Simple con Hielo</h2>
+                <h4 class="Productos-card__descripcion">700</h4>
+                <p class="Productos-card__precio">Precio $20</p>
+                <button class="btnComprar" data-nombre="Agua Simple" data-precio="20">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="footer-titulo">
+                <h2>Taquería De La Cruz</h2>
+            </div>
+            <div class="footer-contacto">
+                <h2>Contacto</h2>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: taqueriadlc@gmail.com</p>
+                <p>Dirección: 123 Calle Principal, México</p>
+              </div>
+            <div class="enlaces-frecuentes">
+                <h2>Enlaces Frecuentes</h2>
+                <ul>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <h2>Redes Sociales</h2>
+                <a class="fab fa-facebook-f footer__icon" href="#"></a>
+                <a class="fab fa-instagram footer__icon" href="#"></a>
+                <a class="fab fa-twitter footer__icon" href="#"></a>
+            </div>
+        </div>
+        <span></span>
+        <h3 class="end-title">&copy;TaqueríaDLC | Todos los derechos reservados</h3>
+    </footer>
+
+    <script src="../js/funtion-search.js"></script>
+    <script src="../js/function-button.js"></script>
+    
+</body>
+</html>
